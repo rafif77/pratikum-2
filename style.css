@@ -1,0 +1,151 @@
+
+/* Mengatur tampilan seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bagian header */
+header {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #0d47a1;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Bagian utama */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+/* Profil utama */
+.profil {
+    background-color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1565c0;
+    margin-bottom: 10px;
+}
+
+.profil h2 {
+    color: #1565c0;
+    margin-bottom: 5px;
+}
+
+/* Kartu biodata, hobi, dan kontak */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.card h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 8px;
+}
+
+/* Tabel biodata */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+}
+
+/* Daftar hobi */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Bagian footer */
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+}
